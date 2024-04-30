@@ -1,0 +1,113 @@
+/* ContractForm.css */
+.contract-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contract-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contract-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contract-form input[type="text"],
+.contract-form input[type="email"],
+.contract-form input[type="tel"],
+.contract-form input[type="date"],
+.contract-form input[type="number"],
+.contract-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.contract-form textarea {
+  height: 100px; /* Adjust height for textarea */
+}
+
+.contract-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contract-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.rent-button {
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprime la bordure */
+  padding: 10px 20px; /* Espacement intérieur */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointer */
+  font-size: 16px; /* Taille de la police */
+}
+
+.rent-button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+.property-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
