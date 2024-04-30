@@ -71,7 +71,7 @@ const ContractForm = () => {
       property.id
     );
      /*
-     TODO mise à jour du state  et redirect!!!
+     TODO mise à jour avec axios  et redirect!!!
      */
  
     /* try {
