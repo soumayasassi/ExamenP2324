@@ -13,6 +13,7 @@ const ContractForm = () => {
   const { id } = useParams();
   const property = propertieslist.find((p) => p.id == id);
   const navigate = useNavigate();
+  const [redirect,setRedirect] = useState(false) ;  
   function updatePropertyAvailability(properties, propertyId) {
     const propertyIndex = properties.findIndex(
       (property) => property.id === propertyId
@@ -42,10 +43,10 @@ const ContractForm = () => {
       setTimeout(() => {
      
       navigate("/list");
-    }, 15000);
-  
+    }, 30000);
+  setRedirect(true) ; 
     
-  }, [submittedData]);
+  }, [redirect]);
   
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -64,14 +65,15 @@ const ContractForm = () => {
     setPhone("");
     setStartDate("");
     setDuration("");
-
+    setRedirect(true) ; 
     const updatedProperties = updatePropertyAvailability(
       propertieslist,
       property.id
     );
-     
-    // console.log(updatedProperties[id-1])
-    //console.log(updatedProperties);
+     /*
+     TODO mise à jour du state  et redirect!!!
+     */
+ 
     /* try {
         await editProperty(property.id, { ...property, available: false });
         console.log('Attribut "available" de la propriété mis à jour avec succès');
@@ -116,7 +118,7 @@ const ContractForm = () => {
           required
         />
 
-        <button type="submit">Valider</button>
+        <button type="submit" >Valider</button>
       </form>
 
       {submittedData && (

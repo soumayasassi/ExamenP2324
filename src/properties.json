@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Appartement moderne",
     "adress": "123 Rue de la République",
-    " governorate ": "Nabeul",
+    "governorate": "Nabeul",
     "price": 200,
     "available": true 
 },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Studio en centre-ville",
     "adress": "789 Avenue du Centre",
-    "governorate": "Marsa",
+    "governorate": "Sousse",
     "price": 250,
     "available": false 
 }
