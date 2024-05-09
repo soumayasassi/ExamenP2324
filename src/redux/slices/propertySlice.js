@@ -9,7 +9,9 @@ const evaluationSlice = createSlice({
   initialState: initialEvaluationState,
   reducers: {
     addEvaluation(state, action) {
-      state.evaluations.push(action.payload);
+     
+      state.evaluations = [...state.evaluations, action.payload]; 
+    
     },
   },
 });
